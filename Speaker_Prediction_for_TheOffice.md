@@ -38,10 +38,7 @@ This is the process that I used for preprocessing my data. When I first ran the 
 
 ## Results
 The highest accuracy that I got for a model on one train-test-split was .3758. 
-I performed a K-Fold Cross Validation with k = 6 to verify model results: 
-
-<img src="/images/kfoldcv.png" width="500"/>.
-
+I performed a K-Fold Cross Validation with k = 6 to verify model results.
 The model overfit very easily, which I tried to combat in several ways, including noise (stop words) and adding a dropout layer, however I continued to see test accuracy being significantly higher than the validation accuracy at the end of the epoch within 3-4 epochs. This can be seen especially in the K-Fold Cross Validation in every split. This graph shows the change in the test loss and validation loss for each epoch during the K-fold Cross-Validation with k = 5: 
 
 <img src="/images/loss_kfcv.png" width="500"/>.
